@@ -1,9 +1,10 @@
-function DashboardCard(props){
-    return(
-        <div className="dashboard-card">
-       <h2>{props.number} </h2>
-       <h3>{props.title}</h3>
-        </div>
-    );
+function DashboardCard(props) {
+  return (
+    <div className="dashboard-card" style={{ backgroundColor: props.color }}>
+      <h2>{props.number}</h2>
+      <p>{props.title}</p>
+    </div>
+  );
 }
+
 export default DashboardCard;
